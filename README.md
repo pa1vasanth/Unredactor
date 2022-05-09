@@ -89,6 +89,8 @@ Bugs:
 The model is not accurate while predicting the names in the redacted text.  
 There are few rows contains 5-fields instead of 4-fields(avoided these lines by error_bad_lines=False)  
 
+### Note: Use 16 Gb instance to execute the unredactor.py
+
 References:  
 https://www.baeldung.com/cs/multi-class-f1-score  
 https://realpython.com/python-nltk-sentiment-analysis/  
