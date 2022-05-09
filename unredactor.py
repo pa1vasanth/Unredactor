@@ -5,13 +5,9 @@ import numpy as np
 import spacy
 import nltk
 from nltk import sent_tokenize,word_tokenize
-from sklearn.feature_extraction import DictVectorizer
-#from nestor import keyword as kex
 from nltk.corpus import stopwords
 import warnings
-from sklearn import svm
 warnings.filterwarnings('ignore')
-nlp = spacy.load('en_core_web_md')
 from sklearn.metrics import precision_score,f1_score,recall_score,accuracy_score
 from nltk.sentiment import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
@@ -28,7 +24,7 @@ def dataextract():
 
 def cleaning(data):
     stop_words = set(stopwords.words('english'))
-    special_char=[',',':',';','?','>','<','/']
+    special_char=[',',':','@','#','!',';','?','>','<','/']
     
     for i in range(len(data)):
         st=data['Sentence'].iloc[i]
