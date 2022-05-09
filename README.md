@@ -84,6 +84,7 @@ This method is used to test test filtering functionality.It asserts true when th
 
 Assumptions:  
 In the Random Forest Classifier I'm using default values except random state. The random_state is assigned to 25345.
+I'm assuming that train and validataion data for training purpose and using testing data for predicting model and score accordingly.
 
 Bugs:  
 The model is not accurate while predicting the names in the redacted text.  
